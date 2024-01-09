@@ -81,6 +81,7 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
+	text-decoration: none;
 	padding: 15px 10px;
 	color: rgba(7, 4, 4, 0.829);
 	-webkit-transition: 0.5s;
