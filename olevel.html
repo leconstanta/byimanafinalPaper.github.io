@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ESC BYIMANA | Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Escbyimana Registration Web">
+        <meta name="author" content="Muhirwe Leo Constantin">
+
+        <!--LINK TO THE CSS FILE WICH ARE EXTERNAL -->
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/olevel.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--########################################-->
+
+        <!--LINK TO FAVICON-->
+        <link rel="shortcut icon" href="images/byimanalogo.png" type="image/x-icon">
+        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    </head>
+
+    <body>
+        <nav class="container-top">
+            <div class="top-goldenrule">
+                <div class="goldenrule">CONSCIENCE — SCIENCE — EXCELLENCE</div>
+            </div>
+            <div class="top-num">
+                <div class="num">Call: +250788316663</div>
+            </div>
+        </nav>
+  <!--______________________________________START OF HEADER ________________________________-->
+  
+  
+        <header class="header">
+            <div class="left-head-side">
+                <img src="images/byimanalogo.png" title="Byimana Logo" loading="lazy"  class="ByimanaLogo">
+                <h2 class="escbtitle"><abbr title="Ecole des science Byimana">Esc BYIMANA</abbr></h2>
+            </div>
+            <div class="right-head-side">
+                <ul class="menu-link">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="olevel.html">O'Level</a></li>
+                    <li><a href="aleve.html">A'Level</a></li>
+                    <li><a href="">Administration</a></li>
+                </ul>
+            </div>
+        </header>
+
+ <!--______________________________________END OF HEADER ________________________________-->
+
+ <!--************************************START OF MAIN SECTION****-->
+
+        <main class="omain">
+            <div class="form-head">
+                <img src="images/N.png" alt="">
+                <img src="images/E.png" alt="">
+                <img src="images/W.png" alt="">
+                <span></span>
+                <img src="images/c.png" alt="" style="background-color: pink;">
+                <img src="images/o.png" alt="">
+                <img src="images/m.png" alt="">
+                <img src="images/E.png" alt="">
+                <img src="images/r.png" alt="">
+            </div>
+
+            <section class="stu-per-info">
+                <span class="borderLine"></span>
+                <form action="http://byimana.escGet" method="get">
+                    <!----------------------------------------student personal info---------------------------------------------------------------------------------->
+                    <fieldset id="stu-per-info-b">
+                        <legend>
+                            <h2 class="stu-per-head">
+                                Student Personal Information
+                            </h2>
+                        </legend>
+                        <!-----------------student name---------------->
+                        <div class="inputBox">
+                            <label for="allNames">
+                                Student names <span>(names must be as on results published by NESA)</span>:
+                            </label>
+                            <input type="text" name="Names" id="allNames"
+                            placeholder="MUHIRWE Leo Constantin" autocomplete="on"
+                            required autofocus>
+                        </div>
+                        <!-------------------------gender------------------------->
+                        <div class="inputBox">
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="female" required>
+                            <label for="female">Female</label>
+                        </div>
+                        <!---------------------year of birth---------------------->
+                        <div class="inputBox">
+                            <label for="decade">Year of Birth:</label>
+                            <input type="number" name="decade" id="decade"
+                            min="2000" max="2018" step="1" value="2004" required>
+                        </div>
+                        <!------------------------nationality----------------->
+                        <div class="inputBox">
+                            <label for="nationality">Nationality:</label>
+                            <select name="nationality" id="nationality" multiple size="3">
+                                <optgroup label="East africa">
+                                    <option value="rwandan" selected>Rwandan</option>
+                                    <option value="ugandan">Ugandan</option>
+                                    <option value="congolese">Congolese</option>
+                                    <option value="burundian">Burundian</option>
+                                </optgroup>
+                                <optgroup label="south Africa">
+                                    <option value="cameroon">cameroon</option>
+                                    <option value="ghana">Ghanania</option>
+                                    <option value="tanzania">Tanzanian</option>
+                                </optgroup>
+                                <option value="others">Other</option>
+                            </select>
+                        </div>
+                        <!-------------------------disability----------------->
+                        <div class="inputBox">
+                            <label for="disability">Disability: </label>
+                            <input type="text" name="disability" id="disability" autocomplete="on"
+                            placeholder="ex:blind" required>
+                        </div>
+                        <!---------------------parenthood------------------->
+                        <div class="inputBox">
+                            <label for="parenthood">Parenthood :</label>
+                            <select name="parenthood" id="parenthood" required>
+                                <option value="allL">All parents alive</option>
+                                <option value="allD">All parents Decesead</option>
+                                <option value="fD">Father Decesead</option>
+                                <option value="mD">Mother Decesead</option>
+                            </select>
+                        </div>
+                        <!-------------------Father info------------------->
+                        <div class="inputBox father-info">
+                            <p>
+                               <label for="fatname">
+                               Father's Name:
+                                </label>
+                                <input type="text" name="fatname" id="fatname"
+                                placeholder="Enter Your father's name" autocomplete="on"
+                                required> 
+                            </p>
+                            <p>
+                                <label for="hid">His ID:</label>
+                                <input type="text" name="hid" id="hid" placeholder="200620217800"
+                                required>
+                            </p>
+
+                            <p>
+                                <label for="htel">His Tel:</label>
+                                <input type="tel" name="htel" id="htel" placeholder="+250788792746"
+                                pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                            </p>
+                        </div>
+                        <!-------------------Motherr info------------------->
+                        <div class="inputBox mother-info">
+                            <p>
+                                <label for="motname">
+                                Mother's Name:
+                                </label>
+                                <input type="text" name="motname" id="motname"
+                                placeholder="Enter Your mother's name" autocomplete="on"
+                                required>                                
+                            </p>
+                            <p>
+                                <label for="mid">Her ID:</label>
+                                <input type="text" name="mid" id="mid" placeholder="200620217800"
+                                required>                            
+                            </p>
+
+                            <p>
+                                <label for="mtel">Her Tel:</label>
+                                <input type="tel" name="mtel" id="mtel" placeholder="+250788792746"
+                                pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                            </p>
+
+                        </div>
+                        <!-----------------Guardian info------------------->
+                        <div class="inputBox guardian-info">
+                            <p>
+                                <label for="gudname">
+                               Guardian's Name:
+                            </label>
+                            <input type="text" name="gudname" id="gudname"
+                            placeholder="Enter Your guardian's name" autocomplete="on"
+                            required>
+                            </p>
+                            <p>
+                                <label for="gid">His/Her ID:</label>
+                                <input type="text" name="gid" id="gid" placeholder="200620217800"
+                                required>
+                            </p>
+                            <p>
+                                <label for="gtel">His/Her Tel:</label>
+                                <input type="tel" name="gtel" id="gtel" placeholder="+250788792746"
+                                pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                            </p>
+
+                        </div>
+                        <!------------------student email--------------->
+                        <div class="inputBox">
+                            <label for="email">
+                                E-mail address of student <span>(if any)</span>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="ex:byimana@gmail.com"
+                            autocomplete="on" required>
+                        </div>
+                         <!-------------------Official papers----------->
+                        <section class="Official-paper">
+                            <h4>
+                                Official Paper Type
+                            </legend>
+                            <div class="inputBox">
+                                <input type="checkbox" name="paper" id="nationalId" value="nationalId">
+                                <label for="nationalId">National Id</label>
+                            </div>
+                            <div class="inputBox">
+                                <input type="checkbox" name="paper" id="passport" value="passport">
+                                <label for="passport">Passport</label>
+                            </div>
+                            <div class="inputBox">
+                                <input type="checkbox" name="paper" id="drivingLicense" value="drivingLicense">
+                                <label for="drivingLicense">Driving License</label>
+                            </div>
+                            <div class="inputBox">
+                                <input type="checkbox" name="paper" id="none" value="none">
+                                <label for="none">None</label>
+                            </div>
+                            
+                        </section>
+                       
+                        <div class="inputBox">
+                            <label for="OfficialPaperN">Official Paper Number:</label>
+                            <input type="text" name="OfficialPaperNumber" id="OfficialPaperN" placeholder="Number of your offiacal paper"
+                            required>
+                        </div>
+
+                        <!---------------------BIrth ------------------->
+                        <div class="inputBox birth-q">
+                            <p>
+                                <label for="provinceOBd">Province of Birth:</label>
+                                <select name="provinceOfBirth" id="provinceOBd">
+                                    <option value="north">Northern Province</option>
+                                    <option value="south">Southern Province</option>
+                                    <option value="east">Easthern Province</option>
+                                    <option value="west">Westhern Province</option>
+                                    <option value="capital">Kigali city</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="districtOBd">District of Birth: </label>
+                                <input type="text" name="districtOfBirth" id="districtOBd" 
+                                placeholder="akagari uvukamo" list="district-list">
+                                <datalist id="district-list">
+                                    <option value="gasabo">gasabo
+                                    <option value="nyarugenge">nyarugenge
+                                    <option value="kicukiro">kicukiro
+                                    <option value="ruhango">ruhango
+                                    <option value="kamonyi">kamonyi
+                                    <option value="huye">huye
+                                </datalist>
+                            </p>
+                            <p>
+                                <label for="sectorOB">Sector of Birth:</label>
+                                <input type="text" name="sectorOfBirth" id="sectorOB" placeholder="umurenge uvukamo">
+                        
+                            </p>
+                            <p>
+                                 <label for="cellOB">cell of Birth:</label>
+                                <input type="text" name="cellOfBirth" id="cellOB" placeholder="umurenge uvukamo">
+                        
+                            </p>
+                            <p>
+                                <label for="villageOB">village of Birth:</label>
+                                <input type="text" name="villageOfBirth" id="villageOB" placeholder="umurenge uvukamo">
+                        
+                            </p>
+                        </div>
+                        <!--------------Residence----------------------->
+                        <div class="inputBox residence-q">
+                            <p>
+                                <label for="provinceOR">Province of Residence:</label>
+                                <select name="provinceOfResidence" id="provinceOR">
+                                    <option value="north">Northern Province</option>
+                                    <option value="south">Southern Province</option>
+                                    <option value="east">Easthern Province</option>
+                                    <option value="west">Westhern Province</option>
+                                    <option value="capital">Kigali city</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="districtOR">District of Residence: </label>
+                                <input type="text" name="districtOfResidence" id="districtOR" 
+                                placeholder="akarere utuyemo" list="district-list">
+                                <datalist id="district-list">
+                                    <option value="gasabo">gasabo
+                                    <option value="nyarugenge">nyarugenge
+                                    <option value="kicukiro">kicukiro
+                                    <option value="ruhango">ruhango
+                                    <option value="kamonyi">kamonyi
+                                    <option value="huye">huye
+                                </datalist>
+                            </p>
+                            <p>
+                                 <label for="sectorOR">Sector of Residence:</label>
+                                <input type="text" name="sectorOfResidence" id="sectorOR" placeholder="umurenge utuyemo">
+
+                            </p>
+
+                            <p>
+                                <label for="cellOR">cell of Residence:</label>
+                                <input type="text" name="cellOfResidence" id="cellOR" placeholder="umurenge utuyemo">
+                            </p>
+
+                           <p>
+                                <label for="villageOR">village of Residence:</label>
+                                <input type="text" name="villageOfResidence" id="villageOR" placeholder="umurenge utuyemo">
+                           </p>
+
+                        </div>
+                        <!----------------sponsership----------------------->
+                        <div class="inputBox">
+                            <label for="sponsership">Sponsership Type:</label>
+                            <input type="text" name="sponsership" id="sponsership" placeholder="your assistant application" list="sponsership-list">
+                            <datalist id="sponsership-list">
+                                <option value="government">Government Of rwanda
+                                <option value="selfSponsered">Self-sponsored
+                                <option value="other">Other
+                            </datalist>
+                        </div>
+                    </fieldset>
+                    
+                    <!------------------------------------previous school info------------------------------------------------------------------------------------------>
+
+                    <fieldset class="previous-shool-info" id="previous-shool-info">
+                        <legend>
+                            <h2 class="previous-shool-info-head">
+                                Previous Shool attended information
+                            </h2>
+                        </legend>
+                        <div class="inputBox">
+                            <label for="district">District:</label>
+                            <input type="text" name="district" id="district" placeholder="location of your school" autocomplete="on" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="sector">sector:</label>
+                            <input type="text" name="sector" id="sector" placeholder="location of your school" autocomplete="on" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="shoolName">Shool Name:</label>
+                            <input type="text" name="shoolName" id="shoolName" placeholder="Enter your school name" autocomplete="on" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="class">Class:</label>
+                            <input type="text" name="classs" id="class" placeholder="ex: senior3" required list="class-list">
+                            <datalist id="class-list">
+                                <option value="seniorOne">SeniorOne
+                                <option value="seniorTwo">SeniorTwo
+                                <option value="seniorThree">SeniorThree
+                                <option value="senioFive">SenioFive
+                                <option value="seniorFour">SeniorFour
+                                <option value="primarySix">PrimarySix
+                            </datalist>
+                        </div>
+                        <div class="inputBox">
+                            <label for="academicyear">Academic Year:</label>
+                            <input type="number" name="academicyear" id="academicyear" min="2022" max="2040">
+                        </div>
+                        <div class="inputBox">
+                            <label for="nationalAgg">National aggregates:</label>
+                            <input type="text" name="nationalAgg" id="nationalAgg" placeholder="Give p6 leaving result or s3 leaving results" required>
+                        </div>
+                    </fieldset>
+                    
+                    <!-----------------------------------------other helpful info------------------------------------------------------------------------------------------->
+
+                    <fieldset class="other-helpful-info" id="other-helpful-info">
+                        <legend>
+                            <h2 class="other-helpful-info-head">
+                                Othe Helpful Information
+                            </h2>
+                        </legend>
+                        <div class="inputBox">
+                            <label for="medicalInsurance">Medical Insurance:</label>
+                            <input type="text" name="medicalInsurance" id="medicalInsurance">
+                        </div>
+                        <div class="inputBox">
+                            <label for="religion">Religion:</label>
+                            <input type="text" name="religion" id="religion">
+                        </div>
+                        <div class="inputBox">
+                            <label for="sport">Sport:</label>
+                            <input type="text" name="sport" id="sport">
+                        </div>
+                        <div class="inputBox">
+                            <label for="visitPeople">
+                                Enter three authorized people <span>(Names and relation)</span>
+                                to visit or to participate in emergency cases for this student
+                            </label>
+                            <div class="inputBox-b">
+                                <span>1:</span>
+                                <input type="text" name="firstPerson" id="visitPeople" placeholder="ex: Mother" required>
+                            </div>
+                            <div class="inputBox-b">
+                                <span>2:</span>
+                                <input type="text" name="secondPerson" id="visitPeople" placeholder="ex: Father" required>
+                            </div>
+                            <div class="inputBox-b">
+                                <span>3:</span>
+                                <input type="text" name="thirdPerson" id="visitPeople" placeholder="ex: uncle" required>
+                            </d>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here or any other thing you wish to tell or ask us"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">SEND</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+ <!--------------------------START OF FOOTER ------------------------------------------------>
+
+
+        <footer class="footer">
+            <div class="footer-down-pos">
+                <div class="footer_container">
+    
+                <div class="footers footer_1">
+                        <h4>ICT CLUB</h4>
+                    <div>
+                        <h3>ICT club made this web with the following aim :</h3>
+                        <p class="abitWhite">&#10003; To help newcomers to easily register</p>
+                        <p class="abitWhite">&#10003; To minimize use of papers in the school</p>
+                        <p class="abitWhite">&#10003; To guard their privacy</p>
+                    </div>
+                </div>
+    
+                <div class="footers footer_2">
+                    <h4>Choose your door</h4>
+                    <ul class="permalinks">
+                        <li><a href="" class="abitWhite">O'Level</a></li>
+                        <li><a href="" class="abitWhite">A'Level</a></li>
+                        <li><a href="" class="abitWhite">Admin</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footers footer_3">
+                    <h4>Contact Us</h4>
+                    <div>
+                        <p class="abitWhite">0787462283</p>
+                        <p class="abitWhite"><a href="">ecoledesscincebyimana@gmail.com</a></p>
+                    </div>
+                    <h4>Link to BABYEYI</h4>
+                    <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/babyeyiEscByimana.pdf')"  >
+            Download Babyeyi
+          </button>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <small>Copyright &#169; 2023 Ict Club. All Rights Reserved.</small>
+            </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
