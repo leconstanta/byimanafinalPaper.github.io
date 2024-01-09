@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: none; */
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main {
+    background: #23242a;
+}
+.form-head img {
+    height: 40px;
+}
+.form-head {
+    display: flex;
+    background: #1c1c1cef;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+.form-head span{
+    content: '';
+    border: 5px solid red;
+    margin: 0 90px 0 200px;
+}
+.stu-per-info {
+    margin: 1em 0 0 5.7em;
+    position: relative;
+    width: 1200px;
+    height: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.stu-per-info::before{
+    content: '';
+    position: absolute;
+    top: -50%; 
+    left: -50%;
+    width: 1200px;
+    height: 1000px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#2cedfb,#22ebf9,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+}
+.stu-per-info::after{
+    content: '';
+    position: absolute;
+    top: -50%; 
+    left: -50%;
+    width: 1200px;
+    height: 1000px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#2cedfb,#22ebf9,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: -20s;
+}
+.borderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderLine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: 15s;
+}
+.borderLine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom left;
+    animation: animate 8s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.stu-per-info form {
+    position: absolute;
+    inset: 4px;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+}
+
+.next {
+    display: grid;
+    grid-template-rows: 1fr;
+}
