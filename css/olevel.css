@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: none; */
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main {
+    background: #23242a;
+}
+.form-head img {
+    height: 40px;
+}
+.form-head {
+    display: flex;
+    background: #1c1c1cef;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+.form-head span{
+    content: '';
+    border: 5px solid red;
+    margin: 0 90px 0 200px;
+}
+.stu-per-info {
+    margin: 1em 0 0 2.5em;
+    position: relative;
+    width: 1200px;
+    height: 2900px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.stu-per-info::before{
+    content: '';
+    position: absolute;
+    top: -50%; 
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#2cedfb,#22ebf9,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+}
+.stu-per-info::after{
+    content: '';
+    position: absolute;
+    top: -50%; 
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#2cedfb,#22ebf9,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: -20s;
+}
+.borderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderLine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: 15s;
+}
+.borderLine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1200px;
+    height: 2900px;
+    background: linear-gradient(0deg,transparent,
+    transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom left;
+    animation: animate 8s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.stu-per-info form {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+}
+
+.stu-per-info form legend {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 25px;
+    letter-spacing: 0.1rem;
+}
+.stu-per-info form fieldset {
+    margin-bottom: 100px;
+}
+.stu-per-info form .inputBox {
+    position: relative;
+    margin: 20px;
+}
+
+.stu-per-info form .inputBox input[type="text"],
+.stu-per-info form .inputBox input[type="email"],
+.stu-per-info form .inputBox input[type="tel"]{
+    position: relative;
+    width: 100%;
+    padding: 10px 0 5px 20px;
+    border: none;
+    border-radius: 6px;
+    width: 400px;
+    box-shadow: none;
+    color: skyblue;
+    background-color: #01070a5d;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.stu-per-info form .inputBox input:hover,
+.stu-per-info form .inputBox input:focus {
+    border: none;
+}
+.stu-per-info form .inputBox label {
+    pointer-events: none;
+    color: #b0afaf;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+#allNames {
+    margin: 20px 0 0px 20px;
+    padding: 8px;
+}
+.stu-per-info form .inputBox input[type="radio"]{
+    margin-right: 10px;
+}
+#decade{
+    /* position: relative; */
+    width: 100%;
+    padding: 5px 0 5px 20px;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    color: rgb(201, 217, 223);
+    background-color: #01070a5d;
+    font-size: 1em;
+}
+#nationality {
+    margin: 0 0 0 10px;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    color: rgb(172, 183, 186);
+    background-color: #01070a5d;
+    font-size: 1em;
+}
+#parenthood {
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 20px;
+    border: none;
+    border-radius: 6px;
+    width: 400px;
+    color: rgb(35, 43, 45);
+    background-color: #69bbe45d;
+    font-size: 1em;
+}
+.father-info p, .mother-info p, .guardian-info p{
+    padding-bottom: 20px;
+}
+.Official-paper {
+    width: 500px;
+    margin: 0 0px 0 20px;
+    padding: 12px;
+    border: 1px solid rgb(61, 62, 66);
+}
+.Official-paper h4 {
+    font-size: 20px;
+    color: #5e5d5d;
+}
+
+.birth-q, .residence-q {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+
+    padding: 20px;
+    inset: 1px;
+    border: 2px solid rgb(25, 23, 23);
+}
+#sectorOB, #districtOBd, #provinceOBd, #cellOB,#villageOB,
+#sectorOR, #districtOR, #provinceOR, #cellOR,#villageOR{
+    width: 200px;
+}
+#provinceOBd, #provinceOR {
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 20px;
+    border: none;
+    border-radius: 6px; 
+    width: 200px;
+    color: rgb(35, 43, 45);
+    background-color: #69bbe45d;
+    font-size: 1em;
+}
