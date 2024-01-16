@@ -46,7 +46,8 @@ body {
     align-items: center;
     margin: 5px 6px 0 8px;
     height: 14vh;
-    background-color: #eae7e744;
+background-color: #fff;
+/*     background-color: #eae7e744; */
 }
 .left-head-side {
     display: flex;
